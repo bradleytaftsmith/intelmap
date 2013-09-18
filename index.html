@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta http-equiv="Content-Type" content="text.html; charset=utf-8" />
+	<meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-capable" content="yes">
+	<title>IntelMap</title>
+	<link rel="icon"
+	      type="image/png"
+	      href="intelmap/earth.png"
+	<link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css">
+	<link rel="stylesheet" href="http://openlayers.org/dev/examples/style.css" type="text/css">
+	<style type="text/css">
+		html, body, #map {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            #text {
+            	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                position: absolute;
+                border: 2px dashed #D1C7AC;
+                bottom: 1em;
+                left: 1em;
+                width: 300px;
+                z-index: 20000;
+                background-color: white;
+                padding: 0 0.5em 0.5em 0.5em;
+            }
+             
+           /* #logo {
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                position: absolute;
+                border: 2px;
+                top: 1em;
+                right: 1em;
+                width: 120px;
+                height: 100px;
+                z-index: 20000;
+                background-color: white;
+            }
+*/
+            .olControlMap
+    </style>
+	<script type='text/javascript' src='intelmap/OpenLayers.js'></script> 
+</head>
+	
+
+	<script type='text/javascript' src='intelmap/intelmap.js'></script>
+
+
+<body onload='init();'>
+	<div id='map'></div>
+        <div id="text">
+              <h1 id="title">Intel Map</h1>
+
+              <div id="tags">
+                css, style, fullscreen, window, margin, padding, scrollbar
+              </div>
+
+            <div id="docs">
+                <p>user-generated news from <a href="http://news.intelmap.com" target="_blank">news.intelmap.com</a></p>
+                <p>geocoded with geonames' <a href="http://http://www.geonames.org/rss-to-georss-converter.html" target="_blank">rss2georss</a></p>
+		<p>mapped with <a href="http://www.openlayers.org/" target="_blank">openlayers</a>;  <a href="mailto:bradleysmith.dev@gmail.com" target="_blank">feedback</a>;   <a href="https://www.github/bradleytaftsmith/intelmap" target="_blank">github</a></p>
+            </div>
+        </div>
+        
+       
+</body>
+</html>
+	
