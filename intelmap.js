@@ -34,7 +34,7 @@ var map;
 		var imredico = new OpenLayers.Icon('intelmap/redmarker.png', new OpenLayers.Size(30,25));
 		var nsaico = new OpenLayers.Icon ('intelmap/nsa.png', new OpenLayers.Size(30,25));
 
-		var intelmapnews = new OpenLayers.Layer.GeoRSS("news.intelmap.com:8080 Discussion feed", "http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fnews.intelmap.com%3A8080%2Frss&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
+		var intelmapnews = new OpenLayers.Layer.GeoRSS("news.intelmap.com Discussion feed", "http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fnews.intelmap.com%3A8080%2Frss&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
 			{'icon':imredico, sphericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
 
@@ -57,7 +57,7 @@ var map;
 		
 
 		
-		map.setCenter(new OpenLayers.LonLat(0, 0), 3);
+		map.setCenter(new OpenLayers.LonLat(4229107.90037, 4160620.32304), 3);
 		
 		map.getNumZoomLevels = function(){
 		return 15;
