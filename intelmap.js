@@ -45,20 +45,19 @@ var map;
 
 		var SyriaNews = new OpenLayers.Layer.GeoRSS("SyriaNews.CC", 
 			"http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fwww.globalsecurity.org%2Fglobalsecurity-org.xml&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
-			{'icon':imgreenico, sphericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+			{'icon':imgreenico, sphericalMercator: true, useFeedTitle: true, displayInLayerSwitcher: true});
 		
 		var SyriaDeeply = new OpenLayers.Layer.GeoRSS("Beta.SyriaDeeply.org", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://beta.syriadeeply.org/category/forum/feed&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
-			{'icon':imblueico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+			{'icon':imblueico, spericalMercator: true, useFeedTitle: true, displayInLayerSwitcher: true});
 
 		var BreakingNews = new OpenLayers.Layer.GeoRSS("BreakingNews.com Syria", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://www.breakingnews.com/feeds/rss/syria&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
-			{'icon':imyellowico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+			{'icon':imyellowico, spericalMercator: true, useFeedTitle: true, displayInLayerSwitcher: true});
 
 		var SyrianFreePress = new OpenLayers.Layer.GeoRSS("BreakingNews.com Syria", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://syrianfreepress.wordpress.com/feed/&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
-			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+			{'icon':imorangeico, spericalMercator: true, useFeedTitle: true, displayInLayerSwitcher: true});
 
 		map.addLayers([
 		osm,
-		intelmapnews,
 		SyriaNews,
 		SyriaDeeply,
 		BreakingNews,
