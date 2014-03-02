@@ -30,13 +30,13 @@ var map;
 			"http://b.tile.openstreetmap.org/${z}/${x}/${y}.png"],
 			{isBaseLayer: true, displayInLayerSwitcher: false});
 
-		var gsico = new OpenLayers.Icon('intelmap/globalsecurity.ico', new OpenLayers.Size(15,13));
-		var imredico = new OpenLayers.Icon('intelmap/redmarker.png', new OpenLayers.Size(35,30));
-		var imgreenico = new OpenLayers.Icon('intelmap/greenmarker.png', new OpenLayers.Size(35,30));
-		var imorangeico = new OpenLayers.Icon('intelmap/orangemarker.png', new OpenLayers.Size(35,30));
-		var imblueico = new OpenLayers.Icon('intelmap/bluemarker.png', new OpenLayers.Size(35,30));
-		var imyellowico = new OpenLayers.Icon('intelmap/yellowmarker.png', new OpenLayers.Size(35,30));
-		var nsaico = new OpenLayers.Icon ('intelmap/nsa.png', new OpenLayers.Size(35,30));
+		var gsico = new OpenLayers.Icon('globalsecurity.ico', new OpenLayers.Size(15,13));
+		var imredico = new OpenLayers.Icon('redmarker.png', new OpenLayers.Size(35,30));
+		var imgreenico = new OpenLayers.Icon('greenmarker.png', new OpenLayers.Size(35,30));
+		var imorangeico = new OpenLayers.Icon('orangemarker.png', new OpenLayers.Size(35,30));
+		var imblueico = new OpenLayers.Icon('bluemarker.png', new OpenLayers.Size(35,30));
+		var imyellowico = new OpenLayers.Icon('yellowmarker.png', new OpenLayers.Size(35,30));
+		var nsaico = new OpenLayers.Icon ('nsa.png', new OpenLayers.Size(35,30));
 
 		var intelmapnews = new OpenLayers.Layer.GeoRSS("news.intelmap.com", 
 			"http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fnews.intelmap.com%3A8080%2Frss&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
