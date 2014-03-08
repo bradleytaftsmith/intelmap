@@ -43,25 +43,30 @@ var map;
 			{'icon':imredico, sphericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
 
-		var SyriaNews = new OpenLayers.Layer.GeoRSS("SyriaNews.CC", 
-			"http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fhttp://www.syrianews.cc/feed/&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
+		var firstlook = new OpenLayers.Layer.GeoRSS("Firstlook.org News", 
+			"http://api.geonames.org/rssToGeoRSS?feedUrl=https://firstlook.org/theintercept/feed/?post_type=article&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
 			{'icon':imgreenico, sphericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 		
-		var SyriaDeeply = new OpenLayers.Layer.GeoRSS("Beta.SyriaDeeply.org", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://beta.syriadeeply.org/category/forum/feed&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
+		var poynter = new OpenLayers.Layer.GeoRSS("poynter.org", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://www.poynter.org/category/latest-news/feed&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
 			{'icon':imblueico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
-		var BreakingNews = new OpenLayers.Layer.GeoRSS("BreakingNews.com Syria", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://www.breakingnews.com/feeds/rss/syria&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
+		var nyt = new OpenLayers.Layer.GeoRSS("New York Times World", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://rss.nytimes.com/services/xml/rss/nyt/World.xml&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
 			{'icon':imyellowico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
-		var SyrianFreePress = new OpenLayers.Layer.GeoRSS("BreakingNews.com Syria", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://syrianfreepress.wordpress.com/feed/&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
+		var npr = new OpenLayers.Layer.GeoRSS("National Public Radio World News", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://www.npr.org/rss/rss.php?id=1004&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
 			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
+		var SyriaDeeply = new OpenLayers.Layer.GeoRSS("Beta.SyriaDeeply.org", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://beta.syriadeeply.org/category/forum/feed&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
+                        {'icon':imyellowico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+		
 		map.addLayers([
 		osm,
-		SyriaNews,
-		SyriaDeeply,
-		BreakingNews,
-		SyrianFreePress
+		intelmapnews,
+		firstlook,
+		poynter,
+		nyt,
+		npr
+		SyriaDeeply		
 		]);
 				
 		map.addControl(new OpenLayers.Control.LayerSwitcher({}));		
@@ -70,7 +75,7 @@ var map;
 		
 
 		
-		map.setCenter(new OpenLayers.LonLat(4229107.90037, 4140620.32304), 7);
+		map.setCenter(new OpenLayers.LonLat(17.99,59.3),3);
 		
 		map.getNumZoomLevels = function(){
 		return 15;
