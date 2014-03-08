@@ -58,10 +58,11 @@ var map;
 
 		map.addLayers([
 		osm,
-		SyriaNews,
-		SyriaDeeply,
-		BreakingNews,
-		SyrianFreePress
+		//SyriaNews,
+		//SyriaDeeply,
+		//BreakingNews,
+		//SyrianFreePress,
+		intelmapnews
 		]);
 				
 		map.addControl(new OpenLayers.Control.LayerSwitcher({}));		
@@ -70,7 +71,7 @@ var map;
 		
 
 		
-		map.setCenter(new OpenLayers.LonLat(4229107.90037, 4140620.32304), 7);
+		map.setCenter(new OpenLayers.LonLat(17.99,59.3),10);
 		
 		map.getNumZoomLevels = function(){
 		return 15;
