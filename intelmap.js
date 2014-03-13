@@ -65,8 +65,8 @@ var map;
 		firstlook,
 		poynter,
 		nyt,
-		npr
-		SyriaDeeply		
+		npr,
+		SyriaDeeply
 		]);
 				
 		map.addControl(new OpenLayers.Control.LayerSwitcher({}));		
