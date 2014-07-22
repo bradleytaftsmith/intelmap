@@ -56,13 +56,18 @@ var map;
 		var SyrianFreePress = new OpenLayers.Layer.GeoRSS("BreakingNews.com Syria", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://syrianfreepress.wordpress.com/feed/&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
 			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
+		var satp.org = new OpenLayers.Layer.GeoRSS("SATP.ORG", "http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fsatp.org%2Fsatp.xml&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
+			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+		
+
 		map.addLayers([
 		osm,
 		//SyriaNews,
-		//SyriaDeeply,
+		SyriaDeeply,
 		//BreakingNews,
-		//SyrianFreePress,
-		intelmapnews
+		SyrianFreePress,
+		intelmapnews,
+                satp.org
 		]);
 				
 		map.addControl(new OpenLayers.Control.LayerSwitcher({}));		
