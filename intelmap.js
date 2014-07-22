@@ -56,6 +56,7 @@ var map;
 		var npr = new OpenLayers.Layer.GeoRSS("National Public Radio World News", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://www.npr.org/rss/rss.php?id=1004&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
 			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 
+<<<<<<< HEAD
 		var SyriaDeeply = new OpenLayers.Layer.GeoRSS("Beta.SyriaDeeply.org", "http://api.geonames.org/rssToGeoRSS?feedUrl=http://beta.syriadeeply.org/category/forum/feed&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false",
                         {'icon':imyellowico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
 		
@@ -67,6 +68,20 @@ var map;
 		nyt,
 		npr,
 		SyriaDeeply
+=======
+		var satp.org = new OpenLayers.Layer.GeoRSS("SATP.ORG", "http://api.geonames.org/rssToGeoRSS?feedUrl=http%3A%2F%2Fsatp.org%2Fsatp.xml&&username=bradsmith&geoRSS=simple&type=rss_2.0&addUngeocodedItems=false%22",
+			{'icon':imorangeico, spericalMercator: true, useFeedTitle: false, displayInLayerSwitcher: true});
+		
+
+		map.addLayers([
+		osm,
+		//SyriaNews,
+		SyriaDeeply,
+		//BreakingNews,
+		SyrianFreePress,
+		intelmapnews,
+                satp.org
+>>>>>>> 1379e875eb2bd72499bc17a186bc43d730328eb3
 		]);
 				
 		map.addControl(new OpenLayers.Control.LayerSwitcher({}));		
@@ -75,7 +90,11 @@ var map;
 		
 
 		
+<<<<<<< HEAD
 		map.setCenter(new OpenLayers.LonLat(17.99,59.3),3);
+=======
+		map.setCenter(new OpenLayers.LonLat(17.99,59.3),10);
+>>>>>>> 1379e875eb2bd72499bc17a186bc43d730328eb3
 		
 		map.getNumZoomLevels = function(){
 		return 15;
